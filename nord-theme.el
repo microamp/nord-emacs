@@ -397,6 +397,9 @@
     `(anzu-mode-line ((,class (:foreground, nord8))))
     `(anzu-mode-line-no-match ((,class (:foreground, nord11))))
 
+    ;; > Auto Highlight Symbol
+    `(ahs-plugin-whole-buffer-face ((,class (:background ,nord14 :foreground ,nord1))))
+
     ;; > Company
     `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
     `(company-preview ((,class (:foreground ,nord4 :background ,nord10))))
@@ -435,6 +438,18 @@
     `(git-gutter+-modified ((,class (:foreground ,nord13))))
     `(git-gutter+-added ((,class (:foreground ,nord14))))
     `(git-gutter+-deleted ((,class (:foreground ,nord11))))
+
+    ;; > Highlight symbols
+    `(hi-yellow ((,class (:background ,nord13 :foreground ,nord1))))
+    `(hi-pink ((,class (:background ,nord11 :foreground ,nord5))))
+    `(hi-green ((,class (:background ,nord14 :foreground ,nord1))))
+    `(hi-blue ((,class (:background ,nord9 :foreground ,nord1))))
+    `(hi-green-b ((,class (:background ,nord14 :foreground ,nord5))))
+    `(hi-blue ((,class (:background ,nord9 :foreground ,nord1))))
+    `(hi-blue-b ((,class (:background ,nord9 :foreground ,nord5))))
+    `(hi-black-hb ((,class (:background ,nord5 :foreground ,nord1))))
+    `(hi-black-b ((,class (:background ,nord7 :foreground ,nord1))))
+    `(hi-red-b ((,class (:background ,nord15 :foreground ,nord5))))
 
     ;; > Helm
     `(helm-bookmark-addressbook ((,class (:foreground ,nord7))))
@@ -483,6 +498,9 @@
     `(helm-swoop-target-line-face ((,class (:background ,nord13 :foreground ,nord3))))
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
+
+    ;; > Hydra
+    `(hydra-face-red ((,class (:foreground ,nord11 :weight bold))))
 
     ;; > Magit
     `(magit-branch ((,class (:foreground ,nord7 :weight bold))))
