@@ -400,6 +400,10 @@
     ;; > Auto Highlight Symbol
     `(ahs-plugin-whole-buffer-face ((,class (:background ,nord14 :foreground ,nord1))))
 
+    ;; > Avy
+    `(avy-lead-face ((,class (:background ,nord11 :foreground ,nord5))))
+    `(avy-lead-face-0 ((,class (:background ,nord10 :foreground ,nord5))))
+
     ;; > Company
     `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
     `(company-preview ((,class (:foreground ,nord4 :background ,nord10))))
