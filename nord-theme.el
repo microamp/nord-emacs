@@ -268,6 +268,20 @@
     ;;;; + Package Support +
     ;;;; +-----------------+
     ;; +--- Syntax ---+
+    ;; > Auctex
+    `(font-latex-bold-face ((,class (:inherit bold))))
+    `(font-latex-italic-face ((,class (:inherit italic))))
+    `(font-latex-math-face ((,class (:foreground ,nord8))))
+    `(font-latex-sectioning-0-face ((,class (:foreground ,nord8 :weight bold))))
+    `(font-latex-sectioning-1-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-2-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-3-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-4-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-sectioning-5-face ((,class (:inherit font-latex-sectioning-0-face))))
+    `(font-latex-script-char-face ((,class (:inherit font-lock-warning-face))))
+    `(font-latex-string-face ((,class (:inherit font-lock-string-face))))
+    `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
+
     ;; > Elixir
     `(elixir-attribute-face ((,class (:foreground ,nord-annotation))))
     `(elixir-atom-face ((,class (:foreground ,nord4 :weight bold))))
@@ -403,6 +417,8 @@
     ;; > Avy
     `(avy-lead-face ((,class (:background ,nord11 :foreground ,nord5))))
     `(avy-lead-face-0 ((,class (:background ,nord10 :foreground ,nord5))))
+    `(avy-lead-face-1 ((,class (:background ,nord3 :foreground ,nord5))))
+    `(avy-lead-face-2 ((,class (:background ,nord15 :foreground ,nord5))))
 
     ;; > Company
     `(company-echo-common ((,class (:foreground ,nord0 :background ,nord4))))
@@ -498,8 +514,10 @@
     `(helm-selection ((,class (:inherit highlight))))
     `(helm-selection-line ((,class (:background ,nord2))))
     `(helm-source-header ((,class (:height 1.44 :foreground ,nord8 :background ,nord2))))
+    `(helm-swoop-line-number-face ((,class (:foreground ,nord4 :background ,nord0))))
     `(helm-swoop-target-word-face ((,class (:foreground ,nord0 :background ,nord7))))
     `(helm-swoop-target-line-face ((,class (:background ,nord13 :foreground ,nord3))))
+    `(helm-swoop-target-line-block-face ((,class (:background ,nord13 :foreground ,nord3))))
     `(helm-separator ((,class (:background ,nord2))))
     `(helm-visible-mark ((,class (:background ,nord2))))
 
