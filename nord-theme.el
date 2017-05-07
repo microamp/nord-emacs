@@ -4,7 +4,7 @@
 
 ;; Title: Nord Theme
 ;; Project: nord-emacs
-;; Version: 0.2.0
+;; Version: 0.3.0
 ;; URL: https://github.com/arcticicestudio/nord-emacs
 ;; Author: Arctic Ice Studio <development@arcticicestudio.com>
 ;; Package-Requires: ((emacs "24"))
@@ -436,6 +436,11 @@
     `(company-tooltip-mouse ((,class (:inherit highlight))))
     `(company-tooltip-selection ((,class (:background ,nord3 :weight bold))))
 
+    ;; > diff-hl
+   `(diff-hl-change ((,class (:background ,nord13))))
+   `(diff-hl-insert ((,class (:background ,nord14))))
+   `(diff-hl-delete ((,class (:background ,nord11))))
+   
     ;; > Evil
     `(evil-ex-info ((,class (:foreground ,nord8))))
     `(evil-ex-substitute-replacement ((,class (:foreground ,nord9))))
@@ -561,6 +566,24 @@
     `(powerline-evil-insert-face ((,class (:foreground ,nord0 :background ,nord4))))
     `(powerline-evil-visual-face ((,class (:foreground ,nord0 :background ,nord7))))
     `(powerline-evil-replace-face ((,class (:foreground ,nord0 :background ,nord9))))
+
+    ;; > NeoTree
+    `(neo-banner-face ((,class (:foreground ,nord10))))
+    `(neo-dir-link-face ((,class (:foreground ,nord9))))
+    `(neo-expand-btn-face ((,class (:foreground ,nord6 :bold t))))
+    `(neo-file-link-face ((,class (:foreground ,nord4))))
+    `(neo-root-dir-face ((,class (:foreground ,nord7 :weight bold))))
+    `(neo-vc-added-face ((,class (:foreground ,nord14))))
+    `(neo-vc-conflict-face ((,class (:foreground ,nord11))))
+    `(neo-vc-default-face ((,class (:foreground ,nord4))))
+    `(neo-vc-edited-face ((,class (:foreground ,nord13))))
+    `(neo-vc-ignored-face ((,class (:foreground ,nord3))))
+    `(neo-vc-missing-face ((,class (:foreground ,nord12))))
+    `(neo-vc-needs-merge-face ((,class (:background ,nord12 :foreground ,nord4))))
+    `(neo-vc-needs-update-face ((,class (:background ,nord10 :foreground ,nord4))))
+    `(neo-vc-removed-face ((,class (:foreground ,nord11 :strike-through nil))))
+    `(neo-vc-up-to-date-face ((,class (:foreground ,nord4))))
+    `(neo-vc-user-face ((,class (:foreground ,nord4))))
 
     ;; > Org
     `(org-level-1 ((,class (:foreground ,nord8 :weight bold))))
